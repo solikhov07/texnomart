@@ -22,6 +22,7 @@ import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux';
 import { BsChevronRight } from 'react-icons/bs'
 import { RiDeleteBin6Line } from 'react-icons/ri'
+import { signup, logout, useAuth } from "../../firebase/config";
 const Header = () => {
   const [location, setLocation] = useState(navbatTextTop.map(text => text.location[0]))
   const [selectedText, setSelectedText] = useState()
@@ -66,6 +67,18 @@ const [favouriteProduct, setFavouriteProduct] = useState()
 
   const dataNumber = useSelector(amountInfo => amountInfo.amountInfo.products)
   const stateForm = useSelector(amountInfo => amountInfo.amountInfo.infoState)
+      const currentUser = useAuth();
+    const emailRef = useRef();
+    const passwordRef = useRef();
+    console.log(currentUser);
+    async function handleSignup() {
+        try {
+            await signup(emailRef.current.value, passwordRef.current.value);
+            alert("Succesfully signedUp")
+        } catch {
+            alert("Error!");
+        }
+    }
   return (
     <header>
 {
@@ -461,8 +474,8 @@ item.underHeadings.map(text =>
   <div className={c.signup_box}>
   <form onSubmit={(e) => {e.preventDefault()}}>
       <div className={c.signup_input_box}>
-      <input style={registrPhonenumberSignup < 9 ? {border: "2px solid red"} : null} onInput={(e) => {setRegistrPhonenumberSignup(e.target.value.length)}} required  type="text" />
-      <label className={c.input_type} htmlFor="">Телефон</label>
+      <input ref={passwordRef} style={registrPhonenumberSignup < 9 ? {border: "2px solid red"} : null} onInput={(e) => {setRegistrPhonenumberSignup(e.target.value.length)}} required  type="text" />
+      <label  className={c.input_type} htmlFor="">Телефон</label>
       <label className={c.input_value_number} htmlFor="">+998</label>
       </div>
       <div className={c.signup_phone_incorrect_warning}>
@@ -470,7 +483,7 @@ item.underHeadings.map(text =>
       </div>
       <div>
       <div className={c.signup_name_input_box}>
-      <input onClick={() => {setLabel(true)}} required  type="text" />
+      <input onClick={() => {setLabel(true)}} required ref={emailRef} type="email" />
       <label style={label ? {transform: "translate(-9px, -23px) scale(0.9)"} : null} className={c.input_value_name} htmlFor="">Исм</label>
       </div>
       <div className={c.signup_name_input_box}>
@@ -482,7 +495,7 @@ item.underHeadings.map(text =>
       <p>Чегирмалар ва акциялар ҳақида билишни истайман</p>
       </div>
       <div className={c.btn_signup}>
-        <button type='submit'>Рўйхатдан ўтиш</button>
+        <button onClick={handleSignup} type='submit'>Рўйхатдан ўтиш</button>
       </div>
       </form>
   </div>

@@ -1,14 +1,30 @@
+import { useEffect, useState } from "react";
+import { initializeApp } from "firebase/app";
+import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged, signOut } from "firebase/auth";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-import firebase from 'firebase'
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyBwN7hIDoKp4ir1rOoDHLO2JSpdn12f8Lw",
-    authDomain: "fir-a2c6a.firebaseapp.com",
-    projectId: "fir-a2c6a",
-    storageBucket: "fir-a2c6a.appspot.com",
-    messagingSenderId: "488084480236",
-    appId: "1:488084480236:web:8695dedd5e38c9c7aec5c9",
-    measurementId: "G-QE0V4BREY3"
+    apiKey: "AIzaSyB1AshxUYR-BNzqXesDQKnVZrj07L2YYrE",
+    authDomain: "registr-f8bc7.firebaseapp.com",
+    projectId: "registr-f8bc7",
+    storageBucket: "registr-f8bc7.appspot.com",
+    messagingSenderId: "952163966497",
+    appId: "1:952163966497:web:531598f12e5debdfd10d60",
+    measurementId: "G-4H3XTQJ8CB"
   };
-  const backend = firebase.initializeApp(firebaseConfig);
-  const auth = backend.auth();
-  export {auth, backend}
+const app = initializeApp(firebaseConfig);
+const auth = getAuth();
+export function signup(email, password) {
+    return createUserWithEmailAndPassword(auth, email, password);
+}
+export function logout() {
+    return signOut(auth);
+}
+export function useAuth() {
+    const [currentUser, setCurrentUser] = useState();
+    useEffect(() => {
+        const unsub = onAuthStateChanged(auth, user => setCurrentUser(user));
+        return unsub;
+    }, [])
+    return currentUser;
+}

@@ -55,11 +55,15 @@ const Header = () => {
       sidebarEl.current.scrollLeft = pagesidebar * sidebarEl.current.offsetWidth
   }, [pagesidebar])
 const [orderedProduct, setOrderedProduct] = useState()
+const [indexProduct, setIndexProduct] = useState()
   const data = useSelector(cartInfo => cartInfo.cartInfo)
 // const newArr = data.map(item =>
 //   item.cardData.name
 //   )
 //   console.log(newArr);
+const [productAmount, setProductAmount] = useState(1)
+const [favouriteProduct, setFavouriteProduct] = useState()
+
   const dataNumber = useSelector(amountInfo => amountInfo.amountInfo.products)
   const stateForm = useSelector(amountInfo => amountInfo.amountInfo.infoState)
   return (
@@ -493,12 +497,12 @@ item.underHeadings.map(text =>
     <GrClose/>
   </div>
 </div>
-<div className={c.cart_ordered_box}>
+<div style={stateForm ? {overflow: "auto"} : {overflow: "hidden"}} className={c.cart_ordered_box}>
 {  stateForm ?
 data.map((item, index) =>
-<div style={orderedProduct === index ? {display: "none"} : null }  className={c.product_selected} key={item.cardData._id}>
+<div style={orderedProduct === item.cardData._id ? {display: "none"} : null }  className={c.product_selected} key={item.cardData._id}>
   <div className={c.ordered_product_info_box}>
-<div>
+<div className={c.ordered_img_product_box}>
 <img className={c.ordered_product_photo} src={item.cardData.image[0].url} alt="" />
 </div>
 <div className={c.ordered_product_text}>
@@ -507,10 +511,14 @@ data.map((item, index) =>
 </div>
 </div>
 <div className={c.ordered_product_optional_icons}>
-  <div className={c.select_ordered_product}></div>
+  <div className={c.select_ordered_product}>
+    <div onClick={() => {setProductAmount(productAmount + indexProduct ** 0)
+    setIndexProduct(index)
+    }}>+</div><div>{productAmount}</div><div onClick={() => {setProductAmount(productAmount - indexProduct ** 0)}}>-</div>
+  </div>
   <div className={c.ordered_product_icons}>
-    <i><AiOutlineHeart/></i>
-    <i onClick={() => {setOrderedProduct(index)}}><RiDeleteBin6Line/></i>
+    <i style={favouriteProduct === index ? {color: "red"} : null} onClick={() => {setFavouriteProduct(index)}}><AiOutlineHeart/></i>
+    <i onClick={() => {setOrderedProduct(item.cardData._id)}}><RiDeleteBin6Line/></i>
   </div>
 </div>
 </div>
@@ -526,10 +534,13 @@ data.map((item, index) =>
 <Link>Харид Килиш</Link>
 </div>
 }
-     
-
-
 </div>
+{stateForm ?
+    <div className={c.btn_box_ordered_product}>
+    <button onClick={() => {setCartBox(false)}} className={c.btn_continue_shopping}>Харидларни давом эттириш</button> <button onClick={() => {alert("We recieved your desires, We will deliver")}} className={c.btn_finish_shopping}>Харидни расмийлаштириш</button>
+  </div>
+  : null 
+    }
 </div>
 </div>
   <div onClick={() => {

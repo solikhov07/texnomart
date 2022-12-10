@@ -513,7 +513,7 @@ position: absolute;
         transform: scale(1);
     }
     to{
-        transform: scale(2);
+        transform: scale(3);
     }
 }
 .box_shadow_radious{

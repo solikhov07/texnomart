@@ -1,0 +1,104 @@
+[
+    {
+        "carouselPhoto": [
+"https://texnomart.uz/_ipx/f_webp,q_100,s_1920x400/https://backend.texnomart.uz/uploads/slides/6648171920kr.webp",
+"https://texnomart.uz/_ipx/f_webp,q_100,s_1920x400/https://backend.texnomart.uz/uploads/slides/8794121920kr.webp",
+"https://texnomart.uz/_ipx/f_webp,q_100,s_1920x400/https://backend.texnomart.uz/uploads/slides/6216461920kr.webp",
+"https://texnomart.uz/_ipx/f_webp,q_100,s_1920x400/https://backend.texnomart.uz/uploads/slides/5439391920kr.webp",
+"https://texnomart.uz/_ipx/f_webp,q_100,s_1920x400/https://backend.texnomart.uz/uploads/slides/5247261920kr.webp",
+"https://texnomart.uz/_ipx/f_webp,q_100,s_1920x400/https://backend.texnomart.uz/uploads/slides/2617201920kr.webp"
+        ],
+        "carouselCircles": 6,
+        "carouselPhonePhotos": [
+            "https://texnomart.uz/_ipx/f_webp,q_100,s_1920x1125/https://backend.texnomart.uz/uploads/slides/876934800kr.webp",
+            "https://texnomart.uz/_ipx/f_webp,q_100,s_1920x1125/https://backend.texnomart.uz/uploads/slides/789793800kr.webp",
+            "https://texnomart.uz/_ipx/f_webp,q_100,s_1920x1125/https://backend.texnomart.uz/uploads/slides/977259800kr.webp",
+            "https://texnomart.uz/_ipx/f_webp,q_100,s_1920x1125/https://backend.texnomart.uz/uploads/slides/657994800kr.webp",
+            "https://texnomart.uz/_ipx/f_webp,q_100,s_1920x1125/https://backend.texnomart.uz/uploads/slides/284364800kr.webp",
+            "https://texnomart.uz/_ipx/f_webp,q_100,s_1920x1125/https://backend.texnomart.uz/uploads/slides/921100800kr.webp"
+        ],
+        "brands": [
+            "https://backend.texnomart.uz//images/brands/2022101404154940058.webp",
+            "https://backend.texnomart.uz//images/brands/2022101404501355729.webp",
+            "https://backend.texnomart.uz//images/brands/2022101404542676301.webp",
+            "https://backend.texnomart.uz//images/brands/2022101404481916020.webp",
+            "https://backend.texnomart.uz//images/brands/2022101405315369098.webp",
+            "https://backend.texnomart.uz//images/brands/2022101404183539183.webp",
+        "https://backend.texnomart.uz//images/brands/2022101404450190315.webp",
+        "https://backend.texnomart.uz//images/brands/2022101404474125545.webp",
+        "https://backend.texnomart.uz//images/brands/2022101404461797247.webp",
+        "https://backend.texnomart.uz//images/brands/2022101404240931733.webp"
+        ],
+        "gadgetProduct": [
+            {
+                "img": "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/smartfon.svg",
+                "title": "Смартфонлар"
+            },
+            {
+                "img": "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/pilesos.svg",
+                "title": "Чангютикчлар"
+            },
+            {
+                "img": "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/planshet.svg",
+                "title": "Планшетлар"
+            },
+            {
+                "img": "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/xolodilnik.svg",
+                "title": "Музлатгичлар"
+            },
+            {
+                "img" : "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/klimaticheskaya-texnika.svg",
+                "title": "Хаво Совутгичлар"
+            },
+            {
+                "img" : "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/lg.svg",
+                "title": "Телевизорлар"
+            },
+            {
+                "img" : "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/feni.svg",
+                "title": "Фенлар"
+            },
+            {
+                "img" : "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/stiralnaya_mashina.svg",
+                "title": "Кир Ювиш Машиналари"
+            }
+        ],
+        "appPreference": [
+            {
+                "img": "https://texnomart.uz/_nuxt/img/phone-min.d3c6b0c.png",
+                "textPreference": "Иловани юкланг",
+                "text": "Ҳаридларни уйдан чиқмаган ҳолда мобил илова орқали амалга оширинг!",
+            "QRCODE": "https://texnomart.uz/_nuxt/img/quar-code.e14205a.png",
+            "instruction": "Камерани йўналтиринг ва Texnomart иловасини бепул юкланг",
+            "playMarketLogo": "https://texnomart.uz/_nuxt/img/play-market-kr.a90fe79.png"
+        }
+        ],
+        "providedFacilities": [
+            {
+                "img": "https://texnomart.uz/_nuxt/img/installment-1.da8d77c.svg",
+"facility": "Муддатли тўловга сотиб олиш",
+                "text": "Техномартда маиший техника маҳсулотлари учун қулай онлайн тўлов"
+            },
+            {
+                "img": "https://texnomart.uz/_nuxt/img/installment-2.de0c0ae.svg",
+                "facility": "Бепул етказиб бериш",
+                "text": "Техномартга товарларни eтказиб бериш шартлари"
+            },
+            {
+                "img": "https://texnomart.uz/_nuxt/img/installment-3.575d98a.svg",
+                "facility": "Маҳсулотлар учун кафолат",
+                "text": "Техномартда маҳсулотнинг кафолати ва қайтарилиши ҳақида ҳамма нарсани билиб олин"
+            },
+            {
+                "img": "https://texnomart.uz/_nuxt/img/installment-4.4086694.svg",
+                "facility": "Бонус тизими",
+                "text": "Бонус тизими"
+            },
+            {
+                "img": "https://texnomart.uz/_nuxt/img/installment-5.513f513.svg",
+                "facility": "Ёрдам",
+                "text": "Кўп бериладиган саволлар"
+            }
+        ]
+    }
+]

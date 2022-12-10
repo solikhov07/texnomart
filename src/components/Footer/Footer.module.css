@@ -1,0 +1,163 @@
+footer{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    padding: 40px 10px;
+    background-color: rgb(53, 53, 53);
+}
+footer > div{
+    display: flex;
+    justify-content: space-around;
+} 
+.footer_options{
+    display: none;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+}
+.box_main_info{
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_text_option{
+    color: white;
+}
+.footer_phonenumber{
+    margin-top: 10px;
+}
+.footer_info_box{
+    color: rgb(237, 237, 237);
+}
+.icon_apps_box{
+    margin-top: 30px;
+    color: rgb(237, 237, 237);
+}
+.icon_apps_box > i{
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: rgb(88, 88, 88);
+}
+.footer_playMarket_logo{
+    margin-top: 30px;
+}
+.branch_link_info{
+    margin-top: 20px;
+}
+.link_info{
+    color: rgb(237, 237, 237);
+text-decoration: underline;
+}
+.footer_title{
+    color: rgb(237, 237, 237);
+}
+.footer_text{
+    color: rgb(237, 237, 237);
+}
+.telegram_box_option{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+border: 2px dashed gray;
+cursor: pointer;
+}
+.telegram_box_option > i{
+    padding: 0 7px;
+}
+.footer_bottom_images{
+    display: flex;
+}
+.footer_line_box_phone_version{
+    display: none;
+}
+.footer_line_box{
+    width: 95%;
+    margin: 30px auto;
+}
+.telegram_box_footer_center{
+    display: none;
+}
+.footer_line_box > hr{
+    width: 100%;
+}
+.footer_bottom{
+    width: 90%;
+    margin: 20px auto;
+}
+.footer_bottom_text{
+    text-align: left;
+    max-width: 600px;
+line-height: 18px;
+color: gray;
+}
+.footer_container_images_center{
+    display: none;
+}
+.footer_bottom img{
+    margin: 0 5px;
+object-fit: contain;
+width: 60px;
+height: 28px;
+}
+@media only screen and (max-width: 1025px){
+    footer > div{
+        display: flex;
+flex-direction: column;
+        justify-content: center;
+    }
+    .footer_options{
+        display: block;
+    } 
+    .box_main_info{
+        margin: 20px 0;
+    }
+    .info_option_card{
+        display: none;
+    }
+    .telegram_box_option{
+        display: none;
+    }
+.telegram_box_footer_center{
+    display: block;
+}
+.footer_line_box_phone_version{
+    display: block;
+    margin: 10px auto;
+    width: 95%;
+}
+.footer_container_images_center{
+    display: block;
+    width: 95%;
+    color: white;
+}
+.footer_center_images{
+    margin-top: 20px;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.footer_center_images > div > img{
+margin: 0 5px;
+}
+.telegram_box_footer_center > div > div{
+    display: flex;
+    padding: 10px ;
+    width: 259px;
+}
+.footer_bottom img{
+    display: none;
+}
+.footer_bottom_text_box{
+    margin: auto;
+}
+    .footer_bottom_text{
+        text-align: center;
+        max-width: 100%;
+    }
+}

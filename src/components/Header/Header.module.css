@@ -1,0 +1,953 @@
+header{
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+position: relative;
+position: sticky;
+top: 0;
+left: 0;
+z-index: 10;
+}
+.header_top{
+    height: 40px;
+background-color: black;
+color: white;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.header_top  *{
+    cursor: pointer;
+}
+
+.header_navbarLocation_box{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.header_location_end{
+    display: none;
+}
+.header_navbarLocation_box > span{
+    font-size: 12px;
+}
+
+.header_navbarLocation_box:hover .location_choices_box{
+    display: block;
+}
+
+.location_choices_box{
+position: absolute;
+color: black;
+top: 20px;
+z-index: 8;
+background: #fff;
+box-shadow: 0 6px 8px -6px rgb(24 39 75 / 12%), 0 8px 16px -6px rgb(24 39 75 / 8%);
+border-radius: 6px;
+padding: 10px 0;
+width: 175px;
+display: none;
+flex-direction: column;
+justify-content: center;
+}
+
+.header_region_options{
+    width: 100%;
+}
+
+.header_region_options > option{
+width: 100%;
+padding: 5px 0 5px 10px;
+}
+
+.header_region_options > option:hover{
+    background-color: rgb(246, 255, 179);
+    transition: 0.7s;
+}
+
+.header_logo{
+    display: none;
+    width: 152px;
+    height: 32px;
+}
+
+.header_logo > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header_top > ul{
+display: flex;
+}
+
+.header_top > ul li{
+padding: 0 8px;
+    list-style: none;
+}
+
+.nav_text_option{
+    background: rgb(114, 114, 114);
+    border-radius: 6px;
+    height: 21px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+}
+
+.header_top_phonenumber_box{
+    display: flex;
+}
+
+.header_phone_icon{
+    display: none;
+}
+
+.header_language_box{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 2px 4px;
+background: none;
+border: 1px solid hsla(0,0%,84.7%,.2);
+box-sizing: border-box;
+border-radius: 150px;
+margin: 2px 0;
+width: 70px;
+}
+
+.header_select_language{
+    background: none;
+    outline: none;
+    color: white;
+    border: none;
+}
+
+.header_select_language > option{
+    color: black;
+}
+
+.header_center{
+    width: 95%;
+    margin: 0 auto;
+    height: 60px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.sidebar_btn{
+    display: none;
+}
+.sidebar_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    width: 60%;
+    height: 100vh;
+    z-index: 11;
+    background-color: #fff;
+}
+.appex_box_sidebar{
+    width: 100%;
+    height: 50px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 10px;
+    background-color: black;
+    border-bottom: 0.1px solid white;
+}
+.btn_close_sidebar > i {
+    color: white;
+}
+.account_box_sidebar{
+    width: 100%;
+height: 50px;
+display: flex;
+align-items: center;
+padding: 0 10px;
+background-color: #333;
+}
+.icon_user_box > i{
+    padding: 10px 13px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.account_text_sidebar > span{
+    color: #fff;
+    margin: 0 10px;
+}
+.info_option_container_sidebar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+scroll-behavior: smooth;
+}
+.info_option_container_sidebar > div{
+    min-width: 100%;
+    min-height: 100%;
+}
+.info_all_option{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.info_all_option > i{
+    padding: 5px 10px;
+    margin: 0 4px 0 16px;
+    border-radius: 5px;
+    background-color: #fbc100;
+}
+.info_option_box  p{
+    margin: 20px 16px;
+}
+.info_text_box{
+    overflow: auto;
+}
+.info_text_box > p{
+    margin: 20px 16px;
+}
+.info_text_otherPages{
+    width: 90%;
+margin: 20px 16px;
+display: flex;
+justify-content: space-between;
+}
+.extra_info_box{
+    min-width: 100%;
+    min-height: 100%;
+overflow: auto;
+}
+
+.info_theme{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.info_theme > i{
+    margin: 0 4px;
+}
+.heading_text_box{
+    display: flex;
+    width: 90%;
+    margin: 10px auto;
+    justify-content: space-between;
+}
+.selected_options_sidebar{
+    width: 90%;
+    margin: 10px auto;
+}
+.info_text_option{
+    cursor: pointer;
+}
+.info_text_option > p{
+    margin:  20px 0;
+}
+.registr_whole_container{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+.registr_box{
+    overflow: hidden;
+    max-width: 500px;
+    height: auto;
+    background-color: white;
+    border-radius: 6px;
+}
+.appex_options_box{
+    height: 50px;
+    width: 100%;
+ background-color: rgb(185, 185, 185);
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+}
+.registr_options_box{
+height: 100%;
+width: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.appex_options_box > div > div{
+    height: 100%;
+padding: 0 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+
+.registr_icon_box{
+    padding: 0 10px;
+    cursor: pointer;
+}
+.registr_container{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: auto;
+    scroll-behavior: smooth;
+}
+.login_box{
+    min-width: 100%;
+height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.login_box > form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 40px 0;
+}
+.login_input_box{
+    width: 100%;
+    position: relative;
+}
+.input_type{
+    position: absolute;
+    background: white;
+    z-index: 1;
+    top: -10px;
+    left: 5px;
+}
+.input_value_number{
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    font-size: 14px;
+}
+.login_input_box > input{
+    padding: 8px 0 8px 45px;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 1px #d5d8df;
+}
+.login_input_box > input:focus{
+border-color: #fbc100;
+box-shadow: none;
+}
+.btn_login_box{
+    width: 100%;
+    margin-top: 25px;
+}
+.btn_login_box > button{
+    cursor: pointer;
+    width: 100%;
+    border-radius: 6px;
+    padding: 15px 0;
+    border: none;
+background-color: #fbc100;
+}
+.number_incorrect_warning{
+    color: red;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.secondOption_of_registering{
+    width: 100%;
+    margin-top: 30px;
+    color: dodgerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup_box{
+    min-width: 100%;
+height: auto;
+}
+.signup_input_box{
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+}
+.signup_input_box > input{
+    padding: 8px 0 8px 45px;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 1px #d5d8df;
+}
+.signup_input_box > input:focus{
+    border-color: #fbc100;
+    box-shadow: none;
+    }
+    .signup_phone_incorrect_warning{
+        width: 80%;
+        margin: auto;
+    }
+.signup_name_input_box{
+    width: 80%;
+    position: relative;
+    margin: 20px auto;
+}
+.signup_name_input_box > input{
+    padding: 8px 0 8px 15px;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 1px #d5d8df;
+}
+.signup_name_input_box > input:focus{
+    border-color: #fbc100;
+    box-shadow: none;
+}
+
+.input_value_name{
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    color: gray;
+    background-color: white;
+transition: 0.5s;
+}
+.beneficial_info_box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+.btn_signup{
+    width: 80%;
+margin: 20px auto;
+}
+.btn_signup > button{
+    cursor: pointer;
+    width: 100%;
+    border-radius: 6px;
+    padding: 15px 0;
+    border: none;
+background-color: #fbc100;
+}
+.container_shadow{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+}
+.header_center_logo{
+width: 168px;
+height: 80%;
+}
+
+.header_center_logo > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.header_center_seacrh{
+    height: 70%;
+    width: auto;
+    display: flex;
+    align-items: center;
+border: 2px solid #fbc100;
+background-color: white;
+border-radius: 6px;
+overflow: hidden;
+}
+.header_center_input{
+    height: 100%;
+width: 336px;
+cursor: pointer;
+position: relative;
+}
+.header_center_input > input {
+width: 100%;
+height: 100%;
+outline: none;
+border: none;
+cursor: pointer;
+}
+.header_center_input > i{
+    position: absolute;
+    top: 10px;
+    color: gray;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header_center_input > i:hover{
+    color: deeppink;
+}
+
+.header_product_select{
+width: 200px;
+height: 100%;
+}
+.header_center_seacrh  select {
+    height: 100%;
+    width: 100%;
+outline: none;
+border: none;
+cursor: pointer;
+background-color: rgb(234, 234, 234);
+font-size: 14px;
+}
+
+.header_center_seacrh > button {
+    height: 100%;
+    padding: 0 15px;
+outline: none;
+border: none;
+background-color: #fbc100;
+cursor: pointer;
+}
+sup{
+    font-size: 12px;
+    padding:  3px 10px;
+    border-radius: 50%;
+    background-color: #fbc100;
+}
+.header_center_nav{
+    width: 460px;
+    height: auto;
+}
+.header_center_nav > ul{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.header_center_nav > ul > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.header_center_nav > ul  li{
+list-style: none;
+}
+.header_center_nav > ul i{
+ font-size: 25px;
+    }
+    .header_bottom{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 98%;
+height: 45px;
+margin: 0 auto;
+    }
+    .header_btn_bottom{
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        background-color: #fbc100;
+        padding: 7px 15px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .header_bottom > ul{
+list-style: none;
+display: flex;
+    }
+    .header_bottom > ul > div{
+        margin: 0 4px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .header_bottom > ul > div:first-child{
+        color: #fbc100;
+        background-color: black;
+        padding: 3px;
+        font-weight: 500;
+        border-radius: 5px;
+    }
+    .header_bottom > ul > div:nth-child(2) > i{
+        color: red;
+    }
+    .header_bottom_right_li{
+        margin: 0 4px;
+        color: gray;
+    }
+    .header_bottom_right_li:hover{
+        transition: 0.5s;
+        color: rgb(196, 174, 198);
+    }
+    .header_above{
+        height: 50px;
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        box-shadow: 0px 0px 3px gray;
+    }
+
+    .header_left_box{
+        display: flex;
+        align-items: center;
+    }
+    .header_bottom_btn_close_icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    padding: 0 10px;
+    cursor: pointer;
+    }
+    .header_bottom_app{
+        cursor: pointer;
+    }
+    .header_bottom_text_info{
+    padding: 0 10px;
+        
+    }
+    .header_right_box > button{
+        background-color: #fbc100;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        box-shadow: 0px 0px 5px gray;
+    }
+    .katalog_container{
+        background-color: #fff;
+        height: 83vh;
+        z-index: 1;
+        width: 100%;
+        position: absolute;
+    }
+    .box_options_katalog{
+        width: 30%;
+        height: 100%;
+        overflow: auto;
+    }
+    .box_options_katalog::-webkit-scrollbar{
+        width: 7px;
+    }
+    .box_options_katalog::-webkit-scrollbar-thumb{
+        border-radius: 5px;
+        background-color: gray;
+    }
+    .option_box_goods{
+        width: 98%;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        justify-content: space-between;
+        margin: 0 auto;
+        border-radius: 6px;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    .box_result_text_katalog{
+        width: 70%;
+        height: 100%;
+        padding: 0 15px;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+    }
+.box_result_text_katalog::-webkit-scrollbar{
+    width: 10px;
+}
+.box_result_text_katalog::-webkit-scrollbar-thumb{
+    border-radius: 25px;
+    background-color: gray;
+}
+    .heading_box{
+        width: 100%;
+        height: 40px;
+        margin: 0 0 28px 0;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    .box_results_text{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+    grid-gap: 20px;
+    }
+    .info_text_result_box{
+        display: flex;
+        flex-direction: column;
+    }
+    .info_text_result_box >  b{
+        margin: 15px 0;
+    }
+    .info_text_result_box >  p{
+        color: gray;
+        margin: 8px 0;
+    }
+    .cart_whole_container{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 11;
+    }
+    .cart_popUp_box{
+        width: 600px;
+        height: 400px;
+        background-color: #fff;
+        border-radius: 6px;
+    }
+.appex_cart{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+padding: 10px 20px;
+}
+.cart_ordered_box > div{
+    margin: 10px auto;
+    width: 90%;
+}
+.cart_ordered_box{
+    overflow: auto;
+    height: 90%;
+}
+
+.ordered_product_optional_icons{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+}
+.ordered_product_icons{
+    display: flex;
+}
+    .close_cart_icon_box{
+        cursor: pointer;
+    }
+    .box_empty_cart{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon_cart_box > i{
+        font-size: 45px;
+        color: gray;
+    }
+    .informing_box{
+        display: flex;
+        justify-content: center;
+        color: rgb(67, 67, 67);
+font-weight: 500;
+    }
+    .box_empty_cart a {
+        margin-top: 20px;
+        color: black;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: 2px solid gold;
+    }
+    .header_bottom_phone_version{
+        width: 100%;
+        z-index: 5;
+        position: fixed;
+     display: none;
+        bottom: 0;
+        height: 40px;
+        background-color: #333;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+    }
+    .header_bottom_phone_version > i{
+        font-size: 22px;
+    }
+    .product_selected{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ordered_box_product{
+    padding: 0 10px;
+    }
+    .ordered_product_info_box{
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+    }
+    .ordered_product_photo{
+        width: 80%;
+        height: 120px;
+        object-fit: cover;
+    }
+    .ordered_product_text > p, b{
+        max-width: 200px;
+    }
+    .ordered_product_price{
+        margin: 20px 0;
+    }
+    @media only screen and (max-width: 1240px){
+        .header_top li{
+            font-size: 14px;
+        }
+        .nav_text_option{
+            background-color: black;
+        }
+        .header_phone_icon{
+            display: block;
+         }
+         .header_phone_text{
+            display: none;
+         }
+         .nav_text_options{
+            display: none;
+        }
+        .header_bottom_right_li{
+            font-size: 14px;
+        }
+    } 
+@media only screen and (max-width: 1025px){
+    .header_top{
+       width: 95%;
+       margin: auto;
+       justify-content: space-between;
+       background: none;
+       color: black;
+    }
+    .header_location_end{
+        display: none;
+    }
+    .header_logo{
+       display: block;
+   }
+    .header_top > ul{
+       display: none;
+       }   
+
+
+       .header_language_box{
+           display: none;
+       }
+       .header_center{
+        display: flex;
+        justify-content: center;
+       }
+       .header_bottom{
+        display: none;
+       }
+       .sidebar_btn{
+        display: block;
+        padding: 8px 15px;
+        border: none;
+        background-color: #fbc100;
+        font-size: 20px;
+        border-radius: 5px;
+       }
+       .header_center_logo{
+        display: none;
+       }
+       .header_product_select{
+        display: none;
+       }
+       .header_center_seacrh{
+        width: 831px;
+        margin-left: 5px;
+       }
+       .header_center_input{
+        width: 100%;
+       }
+       .header_center_input > input{
+        width: 100%;
+       }
+       .header_center_seacrh > button{
+        display: none;
+       }
+       .header_center_nav{
+        display: none;
+       }
+       .header_bottom_btn_box{
+        display: none;
+       }
+       .header_bottom > ul > div{
+display: none;
+    }
+    .header_above{
+        display: flex;
+    }
+    .header_bottom_phone_version{
+        display: flex;
+    }
+    }
+    @media only screen and (max-width: 880px){
+        .cart_popUp_box{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    @media only screen and (max-width: 768px){
+        .sidebar_container{
+            width: 70%;
+        }        
+        .phonenumber_and_location_box{
+            display: flex;
+        }
+        .phonenumber_and_location_box:hover .header_region_end{
+display: block;
+        }
+        .phone_call_number{
+            display: none;
+        }
+        .header_navbarLocation_box{
+            display: none;
+        }
+        .header_location_end{
+            display: block;
+        }
+        .header_region_end{
+            left: -100px;
+        }
+    }
+    @media only screen and (max-width: 550px){
+        .sidebar_container{
+            width: 80%;
+        }
+    }

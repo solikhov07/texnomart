@@ -464,7 +464,7 @@ item.underHeadings.map(text =>
       </div>
       <span className={c.number_incorrect_warning} style={registrPhonenumber < 9 ? {display: "block"} : {display: "none"}}><i><AiOutlineWarning/></i> Телефон рақамини тўғри киритинг</span>
       <div className={c.btn_login_box}>
-      <button type='submit'>Телефон орқали кириш</button>
+      <button onClick={handleSignup}  type='submit'>Телефон орқали кириш</button>
       </div>
       <div className={c.secondOption_of_registering}>
         <p>Логин орқали кириш</p>
@@ -567,7 +567,7 @@ setCartBox(false)
     <i><GoLaw/></i>
     <i onClick={() => {setCartBox(true)}}><FiShoppingCart/> <sup>{dataNumber}</sup></i>
     <i><AiOutlineHeart/></i>
-    <i><BiUser/></i>
+    <i onClick={() => {setRegistrAccount(true)}}><BiUser/></i>
     </div>
 
     </header>

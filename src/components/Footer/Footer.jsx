@@ -11,6 +11,7 @@ import { useState } from 'react';
 import { BsChevronRight } from 'react-icons/bs'
 const Footer = () => {
   const [pickedFooterText, setPickedFooterText] = useState(null)
+  const [indexSelect, setIndexSelect] = useState()
   return (
     <footer>
 {footerPart ?
@@ -19,12 +20,14 @@ footerPart.map(item =>
 <div className={c.footer_options}>
   {item.footerInfo.map((text, index) =>
 <div key={uuidv4()}>
-  <div onClick={() => {if(pickedFooterText === null){setPickedFooterText(text)} else{setPickedFooterText(null)}}} className={c.box_main_info}>
-  <b>{text.title}</b> <i style={pickedFooterText ? {transform: "rotate(90deg)", transition: "0.5s"} : null}><BsChevronRight/></i>
+  <div onClick={() => {if(pickedFooterText === null){setPickedFooterText(text)
+  setIndexSelect(index)
+  } else{setPickedFooterText(null)}}} className={c.box_main_info}>
+  <b>{text.title}</b> <i style={ indexSelect === index  ? {transform: "rotate(90deg)", transition: "0.5s"} : null}><BsChevronRight/></i>
   </div>
 {
-pickedFooterText ?
-pickedFooterText.infoText.map(option =>
+ indexSelect === index ?
+pickedFooterText?.infoText.map(option =>
   <div key={uuidv4()}>
     <p className={c.footer_text_option}>{option}</p>
   </div>

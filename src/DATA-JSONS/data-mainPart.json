@@ -1,12 +1,12 @@
 [
     {
         "carouselPhoto": [
-"https://texnomart.uz/_ipx/f_webp,q_100,s_1920x400/https://backend.texnomart.uz/uploads/slides/6648171920kr.webp",
-"https://texnomart.uz/_ipx/f_webp,q_100,s_1920x400/https://backend.texnomart.uz/uploads/slides/8794121920kr.webp",
-"https://texnomart.uz/_ipx/f_webp,q_100,s_1920x400/https://backend.texnomart.uz/uploads/slides/6216461920kr.webp",
-"https://texnomart.uz/_ipx/f_webp,q_100,s_1920x400/https://backend.texnomart.uz/uploads/slides/5439391920kr.webp",
-"https://texnomart.uz/_ipx/f_webp,q_100,s_1920x400/https://backend.texnomart.uz/uploads/slides/5247261920kr.webp",
-"https://texnomart.uz/_ipx/f_webp,q_100,s_1920x400/https://backend.texnomart.uz/uploads/slides/2617201920kr.webp"
+"https://mini-io-api.texnomart.uz/newcontent/slider/126/2ECcGQJnGpVOBkgwVcOwUNiC3e10uXI5wenBoxu1.webp",
+"https://mini-io-api.texnomart.uz/newcontent/slider/111/1bvd0Bz9Cotk75SK3ISSTXEEAtn446nVJWscv51f.webp",
+"https://avatars.mds.yandex.net/i?id=7491234864871c91f778361417e0e823546e192f4b8d399c-5383525-images-thumbs&n=13",
+"https://avatars.mds.yandex.net/i?id=05b68a333f708ef5bb78293e4438a8162d1da8bc-10555985-images-thumbs&n=13",
+"https://daryo.uz/static/2021/06/unnamed-file-6.png",
+"https://daryo.uz/cache/2021/07/Daryo-16-1280x720.07.png"
         ],
         "carouselCircles": 6,
         "carouselPhonePhotos": [
@@ -18,48 +18,48 @@
             "https://texnomart.uz/_ipx/f_webp,q_100,s_1920x1125/https://backend.texnomart.uz/uploads/slides/921100800kr.webp"
         ],
         "brands": [
-            "https://backend.texnomart.uz//images/brands/2022101404154940058.webp",
-            "https://backend.texnomart.uz//images/brands/2022101404501355729.webp",
-            "https://backend.texnomart.uz//images/brands/2022101404542676301.webp",
-            "https://backend.texnomart.uz//images/brands/2022101404481916020.webp",
-            "https://backend.texnomart.uz//images/brands/2022101405315369098.webp",
-            "https://backend.texnomart.uz//images/brands/2022101404183539183.webp",
-        "https://backend.texnomart.uz//images/brands/2022101404450190315.webp",
-        "https://backend.texnomart.uz//images/brands/2022101404474125545.webp",
-        "https://backend.texnomart.uz//images/brands/2022101404461797247.webp",
-        "https://backend.texnomart.uz//images/brands/2022101404240931733.webp"
+            "https://mini-io-api.texnomart.uz/catalog/special-brands/72/193da322-a1dd-40b6-9b4e-935463d2136f.webp",
+            "https://mini-io-api.texnomart.uz/catalog/special-brands/70/7160cc7e-711b-44bb-a6dc-77dca7ec4924.webp",
+            "https://mini-io-api.texnomart.uz/catalog/special-brands/71/db9c48fb-a175-4ff9-ab06-bd953ddc82cd-medium.webp",
+            "https://mini-io-api.texnomart.uz/catalog/special-brands/80/dd3aeb98-802f-4ddd-9d07-c1abd4b1a482-medium.webp",
+            "https://mini-io-api.texnomart.uz/catalog/special-brands/87/ad04313a-6046-4404-93f4-c0f64e57289d-medium.png",
+            "https://mini-io-api.texnomart.uz/catalog/special-brands/73/e9c04fcd-5ed8-41f8-b417-a8f190a77de1.svg",
+        "https://mini-io-api.texnomart.uz/catalog/special-brands/69/6808325d-2e60-425d-9e5c-6e79cab00233.svg",
+        "https://mini-io-api.texnomart.uz/catalog/special-brands/96/a9acfae1-3152-4e14-a0b1-3012477425c3.svg",
+        "https://mini-io-api.texnomart.uz/catalog/special-brands/74/c53e8986-c05a-4af7-b5a6-adafe1f04bff.webp",
+        "https://mini-io-api.texnomart.uz/catalog/special-brands/89/409cc1aa-92c8-403e-96fc-f0e3dc15da92-medium.webp"
         ],
         "gadgetProduct": [
             {
-                "img": "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/smartfon.svg",
+                "img": "https://mini-io-api.texnomart.uz/catalog/special-category/4/888ea4a7-55dc-4da3-b83d-f34a44c25e3c.svg",
                 "title": "Смартфонлар"
             },
             {
-                "img": "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/pilesos.svg",
+                "img": "https://mini-io-api.texnomart.uz/catalog/special-category/5/365fda66-9e5f-44ac-88ea-f25fc90dc9d1.svg",
                 "title": "Чангютикчлар"
             },
             {
-                "img": "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/planshet.svg",
+                "img": "https://mini-io-api.texnomart.uz/catalog/special-category/6/b4f03ab9-a48d-4bd0-9e27-8bb8d5838036.svg",
                 "title": "Планшетлар"
             },
             {
-                "img": "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/xolodilnik.svg",
+                "img": "https://mini-io-api.texnomart.uz/catalog/special-category/7/43e4d667-f026-484c-80a5-eebc1b128988.svg",
                 "title": "Музлатгичлар"
             },
             {
-                "img" : "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/klimaticheskaya-texnika.svg",
+                "img" : "https://mini-io-api.texnomart.uz/catalog/special-category/8/17e6cca8-ba51-490a-832a-e13d432640d2.svg",
                 "title": "Хаво Совутгичлар"
             },
             {
-                "img" : "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/lg.svg",
+                "img" : "https://mini-io-api.texnomart.uz/catalog/special-category/9/022df0cb-6560-4735-af2b-925057321911.svg",
                 "title": "Телевизорлар"
             },
             {
-                "img" : "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/feni.svg",
+                "img" : "https://mini-io-api.texnomart.uz/catalog/special-category/10/0fc51fb8-ba7d-42dc-bf7a-f131ac4f83f9.svg",
                 "title": "Фенлар"
             },
             {
-                "img" : "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/stiralnaya_mashina.svg",
+                "img" : "https://mini-io-api.texnomart.uz/catalog/special-category/11/ecd242c1-1ff2-4c5e-8e67-3fe7e2819b00.svg",
                 "title": "Кир Ювиш Машиналари"
             }
         ],
